@@ -56,14 +56,14 @@ function computerTurn(playerChoice){
 
     const shuffleInterval = setInterval(() =>{
         const randomChoice = choices[Math.floor(Math.random() * 3)];
-        computerImage.src = `images/${randomChoice}.png`;
+        computerImage.src = `images/${randomChoice}.PNG`;
         shuffleCount++;
 
         // After 3 seconds make a final choice
         if(shuffleCount >= totalShuffles){
             clearInterval(shuffleInterval);
             const finalComputerChoice = choices[Math.floor(Math.random() * 3)];
-            computerImage.src = `images/${finalComputerChoice}.png`;
+            computerImage.src = `images/${finalComputerChoice}.PNG`;
 
             // Highlight the computer's choice
             computerImage.classList.add('selected');
@@ -106,6 +106,6 @@ function resetScore(){
     lossesCount.textContent = losses;
     tiesCount.textContent = ties;
     resultMessage.textContent = "Make your choice!";
-    computerImage.src = "images/question-mark.png";
+    computerImage.src = "images/question-mark.PNG";
     removeAllBorders();
 }
