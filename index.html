@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors Game. Go!</h1>
+
+    <section id="player-section">
+        <div id="player-choices">
+            <figure class="choice" data-choice="rock">
+                <img src="images/rock.png" alt="Rock">
+            </figure>
+            <figure class="choice" data-choice="paper">
+                <img src="images/paper.png" alt="Paper">
+            </figure>
+            <figure class="choice" data-choice="scissors">
+                <img src="images/scissors.png" alt="Scissors">
+            </figure>
+        </div>
+        <h2>YOUR THROW</h2>
+    </section>
+
+    <section id="computer-section">
+        <img id="computer-choice" src="images/question-mark.png" alt="Computer choice">
+        <h2>COMPUTER THROW</h2>
+    </section>
+
+    <section id="outcome-section">
+        <h3>RESULTS:</h2>
+        <p id="result-message">Make your choice!</p>
+    </section>
+
+    <section id="score-section">
+        <h2>SCOREBOARD</h2>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+        <button id="reset-button">Reset</button>
+    </section>
+</body>
+</html>
